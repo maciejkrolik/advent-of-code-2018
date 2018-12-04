@@ -52,7 +52,7 @@ fun main() {
     }
 }
 
-fun getLeftMargin(line: String) = line.substringAfterLast('@').substringBeforeLast(',').trim().toInt()
-fun getUpperMargin(line: String) = line.substringAfterLast(',').substringBeforeLast(':').trim().toInt()
-fun getWidth(line: String) = line.substringAfterLast(':').substringBeforeLast('x').trim().toInt()
-fun getHeight(line: String) = line.substringAfterLast('x').trim().toInt()
+private fun getLeftMargin(line: String) = line.substringAfterLast('@').substringBeforeLast(',').trim().toInt()
+private fun getUpperMargin(line: String) = line.substringAfterLast(',').substringBeforeLast(':').trim().toInt()
+private fun getWidth(line: String) = line.substringAfterLast(':').substringBeforeLast('x').trim().toInt()
+private fun getHeight(line: String) = line.substringAfterLast('x').trim().toInt()
